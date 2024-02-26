@@ -6,7 +6,7 @@ int getRandomNumber(int min, int max) {
 
 ROUND_TYPE getRoundType() {
     int roundType = (rand() % 10) + 1;
-
+    //return roundType based on % specified 
     if (roundType <= 5){
         return REGULAR;
     } else if (roundType >= 6 && roundType <= 8){
@@ -39,7 +39,7 @@ void printRoundInfo(ROUND_TYPE t, int dice, int points) {
     } else {
         points = points;
     }
-
+    //print round name using array of strings
     char *roundName[] = {
         "BONUS",
         "DOUBLE",
